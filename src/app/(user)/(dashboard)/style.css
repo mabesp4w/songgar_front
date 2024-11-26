@@ -1,0 +1,59 @@
+/** @format */
+
+.swiper {
+  width: 100%;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: auto;
+  width: 1200px;
+}
+
+/* media queries */
+/* sm: ≥640px */
+@media (min-width: 140px) {
+  /* Styles for small screens and above */
+  .swiper-slide {
+    width: 300px;
+  }
+}
+
+/* sm: ≥640px */
+@media (min-width: 540px) {
+  /* Styles for small screens and above */
+  .swiper-slide {
+    width: 400px;
+  }
+}
+
+/* md: ≥768px */
+@media (min-width: 768px) {
+  /* Styles for medium screens and above */
+  .swiper-slide {
+    width: 500px;
+  }
+}
+
+/* lg: ≥1024px */
+@media (min-width: 1024px) {
+  /* Styles for large screens and above */
+  .swiper-slide {
+    width: 800px;
+  }
+}
+
+/* xl: ≥1280px */
+@media (min-width: 1280px) {
+  /* Styles for extra large screens and above */
+  .swiper-slide {
+    width: 900px;
+  }
+}
+
+/* end media queries */
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
