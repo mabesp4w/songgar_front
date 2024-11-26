@@ -33,13 +33,13 @@ const Announcement: FC = () => {
   return dtAnnouncements ? (
     dtAnnouncements?.data.length > 0 && (
       <div className="max-h-fit">
-        <div className="bg-primary rounded-t-xl text-accent py-3 mb-4">
+        <div className="bg-primary rounded-t-xl mb-4 text-secondary py-3 px-3">
           <div className="flex items-center gap-x-4 text-lg">
             <BsMegaphone />
             <span className="tracking-wide">Pengumuman</span>
           </div>
         </div>
-        <div className="flex flex-col gap-y-2">
+        <div className="flex flex-col gap-y-2  px-3">
           <p>
             {momentId(dtAnnouncements?.data[0]?.announcement_date).format(
               "DD/MM/YYYY"
@@ -60,7 +60,7 @@ const Announcement: FC = () => {
             }}
           />
         </div>
-        <div>
+        <div className=" px-3">
           <Link
             href="#"
             className="text-muted border border-muted rounded-none mx-auto hover:rounded-sm p-2"

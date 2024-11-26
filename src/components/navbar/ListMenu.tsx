@@ -15,58 +15,56 @@ const ListMenu = [
     href: "/",
     icon: <BsHouseDoorFill />,
   },
-
   {
     name: "Profil",
     slug: "profil",
     subMenus: [
       {
         name: "Visi Misi",
-        href: createUrl("/profil/visiMisi"),
+        href: createUrl("/profiles/visiMisi"),
       },
       {
         name: "Sejarah",
-        href: createUrl("/profil/sejarahSekolah"),
+        href: createUrl("/profiles/history"),
       },
       {
-        name: "Guru dan Tendik",
-        href: createUrl("/profil/guruTendik"),
+        name: "Pegawai",
+        href: createUrl("/profiles/employee"),
       },
       {
         name: "Sarana & Prasarana",
-        href: createUrl("/profil/saranaPrasarana"),
+        href: createUrl("/profiles/facilities"),
       },
     ],
   },
   {
     name: "Kalender Akademik",
-    href: createUrl("/akademik/kalenderAkademik"),
+    href: createUrl("/akademik/calenderAkademik"),
   },
   {
     name: "Galeri",
     subMenus: [
       {
         name: "Galeri Foto",
-        href: createUrl("/galeri/foto"),
+        href: createUrl("/gallery/photo"),
       },
       {
         name: "Galeri Video",
-        href: createUrl("/galeri/video"),
+        href: createUrl("/gallery/video"),
       },
     ],
   },
-
   {
     name: "Pengumuman",
-    href: createUrl("/akademik/kalenderAkademik"),
+    href: createUrl("/announcements"),
   },
   {
     name: "Berita",
-    href: "/berita",
+    href: "/news",
   },
   {
     name: "Tentang Kami",
-    href: "/about",
+    href: "/abouts",
   },
 ];
 

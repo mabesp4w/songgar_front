@@ -22,7 +22,11 @@ const config: Config = {
       colors,
       fontFamily: {
         montserrat: ["Montserrat", "sans-serif"],
+        hollirood: ["Hollirood", "sans-serif"],
       },
+    },
+    container: {
+      center: true,
     },
   },
   plugins: [],

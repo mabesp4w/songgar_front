@@ -33,15 +33,15 @@ const OpenningSpeech: FC = () => {
   return (
     <article className="border border-slate-300 my-20 flex flex-col-reverse gap-y-10 lg:gap-y-0 lg:flex-row gap-x-4 px-2">
       {/* image */}
-      <div className="lg:self-end lg:mb-4">
+      <div className="lg:self-start lg:mb-4">
         <ScrollRevealComponent
           selectorClass="img-kepsek"
           origin="left"
           distance="100px"
         >
-          <div className="relative h-64 md:h-80 lg:h-[454px] lg:w-[331px] mx-10">
+          <div className="relative h-64 lg:w-[331px] mx-10">
             <Image
-              src="/images/kepsek.png"
+              src="/images/dekan.webp"
               alt="hero"
               fill
               className="object-contain"
@@ -50,24 +50,19 @@ const OpenningSpeech: FC = () => {
           </div>
         </ScrollRevealComponent>
         {/* name kepsek */}
-        <ScrollRevealComponent
-          selectorClass="name-kepsek"
-          origin="left"
-          distance="100%"
-          viewFactor={0}
-        >
+        <div>
           <p className="font-medium text-center mt-2">
-            Oktavianus Payung Rantetau, S.Pd.,Gr
+            Efraim Mangaluk, S.S., M.Hum
           </p>
           <p className="font-medium text-center">112345678</p>
-        </ScrollRevealComponent>
+        </div>
       </div>
       {/* openning speech */}
       <section className="grow w-full flex flex-col justify-between gap-y-5 md:gap-y-10 pt-2 pb-6">
         {/* title */}
         <div className="w-fit flex flex-col gap-1">
           <h3 className="text-xl md:text-2xl uppercase font-semibold">
-            Sambutan Kepala Sekolah
+            Sambutan Dekan
           </h3>
           {/* garis */}
           <ScrollRevealComponent
@@ -89,29 +84,27 @@ const OpenningSpeech: FC = () => {
         >
           <p>Salam sejahtera bagi kita semua,</p>
           <p>
-            Puji syukur kita panjatkan ke hadirat Tuhan Yang Maha Esa atas
-            segala rahmat dan karunia-Nya sehingga kita dapat terus berjuang
-            dalam meningkatkan mutu pendidikan di sekolah ini.
+            Selamat datang di laman resmi Fakultas Pertanian Kehutanan Kelautan
+            Universitas Ottow Geissler Papua. Sebagai dekan fakultas, saya
+            merasa sangat bangga dapat menyambut Anda di rumah digital kami.
           </p>
           <p>
-            Selamat datang di situs resmi Sekolah YPPK. Kami berharap kehadiran
-            website ini dapat menjadi jendela informasi yang bermanfaat bagi
-            semua pihak—baik siswa, orang tua, alumni, maupun masyarakat luas.
-            Melalui platform ini, kami ingin memperkenalkan lebih dalam tentang
-            visi, misi, program, serta berbagai kegiatan yang ada di sekolah
-            kami.
+            Fakultas Pertanian Kehutanan Kelautan UOGP berkomitmen untuk
+            menghasilkan lulusan yang berkualitas, inovatif, dan memiliki
+            kepedulian tinggi terhadap lingkungan. Melalui program studi yang
+            kami tawarkan, mahasiswa akan dibekali dengan pengetahuan dan
+            keterampilan yang relevan dengan tantangan dunia pertanian,
+            kehutanan, dan kelautan saat ini.
           </p>
           <p>
-            Sekolah YPPK berkomitmen untuk memberikan pendidikan berkualitas
-            yang berlandaskan nilai-nilai Kristiani. Dengan dukungan dari
-            seluruh civitas akademika, kami terus berupaya menciptakan
-            lingkungan belajar yang kondusif dan inspiratif bagi pengembangan
-            potensi siswa, baik dalam aspek akademik maupun karakter.
+            Kami percaya bahwa website ini akan menjadi jembatan bagi kita untuk
+            saling terhubung dan berbagi informasi. Di sini, Anda akan menemukan
+            berbagai informasi terkait akademik, penelitian, pengabdian
+            masyarakat, serta kegiatan mahasiswa.
           </p>
           <p>
-            Akhir kata, kami ucapkan selamat berselancar di website sekolah ini.
-            Semoga informasi yang disajikan dapat memberikan manfaat dan menjadi
-            sarana yang efektif dalam mendukung pendidikan di Sekolah YPPK.
+            Mari bersama-sama membangun pertanian, kehutanan, dan kelautan yang
+            berkelanjutan di Papua.
           </p>
           <p>Tuhan memberkati kita semua.</p>
         </ScrollRevealComponent>

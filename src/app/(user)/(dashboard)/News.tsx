@@ -31,13 +31,13 @@ const News: FC = () => {
   return dtNews ? (
     dtNews?.data.length > 0 && (
       <div>
-        <div className="bg-primary rounded-t-xl text-accent py-3">
+        <div className="bg-primary rounded-t-xl text-secondary py-3 px-3">
           <div className="flex items-center gap-x-4 text-lg">
             <BsNewspaper />
             <span className="tracking-wide">Berita</span>
           </div>
         </div>
-        <div className="relative min-h-60 rounded-none mx-0">
+        <div className="relative min-h-60 rounded-none mx-0 px-3">
           <Image
             src={`${BASE_URL}/${dtNews?.data[0]?.img_news}`}
             alt={dtNews?.data[0]?.title}
@@ -51,7 +51,7 @@ const News: FC = () => {
             }}
           />
         </div>
-        <div className="flex flex-col gap-y-2 mt-4">
+        <div className="flex flex-col gap-y-2 mt-4 px-3">
           <p>{momentId(dtNews?.data[0]?.news_date).format("DD/MM/YYYY")}</p>
           <p className="font-bold text-lg" title={dtNews?.data[0]?.title}>
             {dtNews?.data[0]?.title?.length > 40
@@ -65,7 +65,7 @@ const News: FC = () => {
             }}
           />
         </div>
-        <div className="-mt-4 flex justify-end">
+        <div className="-mt-4 flex justify-end px-3">
           <Link
             href="#"
             className="text-primary md:text-primary/60 p-2 underline hover:text-primary"
