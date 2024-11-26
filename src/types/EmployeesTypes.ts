@@ -1,6 +1,7 @@
 /** @format */
 
 import MajorsTypes from "./MajorsTypes";
+import StrucruralsTypes from "./StructuralsTypes";
 
 // employees
 interface EmployeesTypes {
@@ -17,6 +18,7 @@ interface EmployeesTypes {
   address: string;
   status: string;
   major: MajorsTypes;
+  structurals: StrucruralsTypes[];
 }
 
 export default EmployeesTypes;
