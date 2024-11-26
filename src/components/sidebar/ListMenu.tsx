@@ -78,7 +78,7 @@ const setAdminMenus = async () => {
 
     {
       name: "Jabatan Struktural",
-      href: createUrl("/structural"),
+      href: createUrl("/structurals"),
       icon: <BsActivity />,
     },
     {

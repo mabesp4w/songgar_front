@@ -17,17 +17,17 @@ type Props = {
   page?: number;
   limit?: number;
   search?: string;
-  role?: string;
+  jabatan?: string;
 };
 
 type Store = {
   dtEmployees: any;
-  setEmployees: ({ page, limit, search, role }: Props) => Promise<{
+  setEmployees: ({ page, limit, search, jabatan }: Props) => Promise<{
     status: string;
     data?: {};
     error?: {};
   }>;
-  setEmployeesAll: ({ search, role }: Props) => Promise<{
+  setEmployeesAll: ({ search, jabatan }: Props) => Promise<{
     status: string;
     data?: {};
     error?: {};
@@ -41,7 +41,7 @@ const token = async () => {
 const useEmployeesApi = create(
   devtools<Store>((set) => ({
     dtEmployees: [],
-    setEmployees: async ({ page = 1, limit = 10, search, role }) => {
+    setEmployees: async ({ page = 1, limit = 10, search, jabatan }) => {
       try {
         const response = await api({
           method: "get",
@@ -51,7 +51,7 @@ const useEmployeesApi = create(
             limit,
             page,
             search,
-            role,
+            jabatan,
           },
         });
         set((state) => ({ ...state, dtEmployees: response.data }));
@@ -66,7 +66,7 @@ const useEmployeesApi = create(
         };
       }
     },
-    setEmployeesAll: async ({ search, role }) => {
+    setEmployeesAll: async ({ search, jabatan }) => {
       try {
         const response = await api({
           method: "get",
@@ -74,10 +74,10 @@ const useEmployeesApi = create(
           headers: { Authorization: `Bearer ${await token()}` },
           params: {
             search,
-            role,
+            jabatan,
           },
         });
-        set((state) => ({ ...state, dtEmployees: response.data }));
+        set((state) => ({ ...state, dtEmployees: response.data.data }));
         return {
           status: "berhasil",
           data: response.data,
