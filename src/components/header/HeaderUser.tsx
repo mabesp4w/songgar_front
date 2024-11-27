@@ -10,7 +10,7 @@ import Image from "next/image";
 import Mobile from "../navbar/Mobile";
 import { motion, AnimatePresence } from "framer-motion";
 import ListMenu from "../navbar/ListMenu";
-import { GiHamburger } from "react-icons/gi";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 const HeaderUser = () => {
   const { isOpen, setIsOpen } = useMenuContext();
@@ -80,7 +80,7 @@ const HeaderUser = () => {
       {/* for mobile */}
       <section className="bg-primary lg:hidden py-2 px-2 text-white flex justify-end">
         {/* button menu */}
-        <GiHamburger
+        <GiHamburgerMenu
           className="text-3xl font-bold cursor-pointer select-none"
           onClick={handleClick}
         />
