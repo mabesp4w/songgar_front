@@ -37,6 +37,15 @@ const ListMenu = [
       },
     ],
   },
+
+  {
+    name: "Pengumuman",
+    href: createUrl("/announcements"),
+  },
+  {
+    name: "Berita",
+    href: "/news",
+  },
   {
     name: "Kalender Akademik",
     href: createUrl("/akademik/calenderAkademik"),
@@ -53,14 +62,6 @@ const ListMenu = [
         href: createUrl("/gallery/video"),
       },
     ],
-  },
-  {
-    name: "Pengumuman",
-    href: createUrl("/announcements"),
-  },
-  {
-    name: "Berita",
-    href: "/news",
   },
   {
     name: "Tentang Kami",

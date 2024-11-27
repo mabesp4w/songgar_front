@@ -62,7 +62,7 @@ const useAnnouncementsApi = create(
             order,
           },
         });
-        set((state) => ({ ...state, dtAnnouncements: response.data.data }));
+        set((state) => ({ ...state, dtAnnouncements: response.data }));
         return {
           status: "berhasil",
           data: response.data,
@@ -88,7 +88,7 @@ const useAnnouncementsApi = create(
             order,
           },
         });
-        set((state) => ({ ...state, dtAnnouncements: response.data.data }));
+        set((state) => ({ ...state, dtAnnouncements: response.data }));
         return {
           status: "berhasil",
           data: response.data,
