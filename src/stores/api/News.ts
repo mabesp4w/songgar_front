@@ -82,7 +82,7 @@ const useNewsApi = create(
             order,
           },
         });
-        set((state) => ({ ...state, dtNews: response.data.data }));
+        set((state) => ({ ...state, dtNews: response.data }));
         return {
           status: "berhasil",
           data: response.data,
