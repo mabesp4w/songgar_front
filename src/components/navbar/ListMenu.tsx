@@ -48,7 +48,7 @@ const ListMenu = [
   },
   {
     name: "Kalender Akademik",
-    href: createUrl("/akademik/calenderAkademik"),
+    href: createUrl("/calendar"),
   },
   {
     name: "Galeri",

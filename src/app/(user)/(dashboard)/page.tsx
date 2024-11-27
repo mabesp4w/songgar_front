@@ -28,7 +28,7 @@ export default function Home() {
         {/* announcement */}
         <ScrollRevealComponent
           selectorClass="announcement"
-          className="w-auto lg:w-[30%]"
+          className="w-auto lg:w-[30%] h-48"
           origin="left"
           viewFactor={1}
         >
