@@ -46,10 +46,7 @@ const MainNavbar: FC = ({}) => {
               <Link href="https://www.facebook.com/" target="_blank">
                 <BiLogoInstagram className="hover:text-slate-50 cursor-pointer" />
               </Link>
-              <Link
-                href="https://www.youtube.com/@SMAYPPKTARUNADHARMAJAYAPURA"
-                target="_blank"
-              >
+              <Link href="https://www.facebook.com/" target="_blank">
                 <BiLogoYoutube className="hover:text-slate-50 cursor-pointer" />
               </Link>
               <Link href="https://www.facebook.com/" target="_blank">
