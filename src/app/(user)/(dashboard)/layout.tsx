@@ -13,7 +13,7 @@ type Props = {
 };
 
 const layout = (props: Props) => {
-  return props.children;
+  return <main>{props.children}</main>;
 };
 
 export default layout;

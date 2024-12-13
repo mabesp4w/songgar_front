@@ -18,6 +18,7 @@ const config: Config = {
         "2": "url('/images/bg/2.png')",
         "3": "url('/images/bg/3.png')",
         "4": "url('/images/bg/4.jpg')",
+        sawah: "url('/images/bg/sawah.jpg')",
       },
       colors,
       fontFamily: {

@@ -18,13 +18,13 @@ const ScrollRevealComponent = dynamic(
 export default function Home() {
   return (
     <main className="md:container mx-auto w-screen">
-      <section className="h-[15rem] md:h-[20rem] lg:h-[38rem] flex mt-[5.6rem]">
+      <section className="h-[15rem] md:h-[20rem] lg:h-[38rem] flex ">
         <Sliders />
       </section>
       {/* kepsek */}
       <OpenningSpeech />
       {/* announcement and news */}
-      <section className="grid grid-cols-1 md:grid-cols-2 lg:flex gap-4 my-16 ">
+      <section className="grid grid-cols-1 md:grid-cols-2 lg:flex gap-4 my-16  bg-white/50 backdrop-blur-md">
         {/* announcement */}
         <ScrollRevealComponent
           selectorClass="announcement"

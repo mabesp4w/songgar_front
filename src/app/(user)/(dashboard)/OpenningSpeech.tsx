@@ -31,7 +31,7 @@ const OpenningSpeech: FC = () => {
     return () => window.removeEventListener("resize", updateViewFactor);
   }, []);
   return (
-    <article className="border border-slate-300 my-20 flex flex-col-reverse gap-y-10 lg:gap-y-0 lg:flex-row gap-x-4 px-2">
+    <article className="border border-slate-300 my-20 flex flex-col-reverse gap-y-10 lg:gap-y-0 lg:flex-row gap-x-4 px-2 bg-white/50 backdrop-blur-md">
       {/* image */}
       <div className="lg:self-start lg:mb-4">
         <ScrollRevealComponent

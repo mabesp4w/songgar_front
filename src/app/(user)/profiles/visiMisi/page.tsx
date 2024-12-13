@@ -4,7 +4,7 @@ import React from "react";
 
 const page = () => {
   return (
-    <section className="container grow mt-32 px-8 text-lg pb-10">
+    <section className="container grow  px-8 text-lg pb-10  bg-white/50 backdrop-blur-md pt-10">
       <h1 className="text-center font-hollirood text-3xl">Visi Misi</h1>
       <div className="flex flex-col gap-4 mt-8">
         <h3 className="text-2xl font-bold">VISI</h3>

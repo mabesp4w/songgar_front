@@ -4,7 +4,7 @@ import React from "react";
 
 const page = () => {
   return (
-    <section className="container grow mt-32">
+    <section className="container grow pt-10 bg-white/50 backdrop-blur-md">
       <h1 className="text-center font-hollirood md:text-2xl lg:text-3xl text-lg">
         FAKULTAS PERTANIAN KEHUTANAN KELAUTAN
       </h1>

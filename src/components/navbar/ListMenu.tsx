@@ -24,8 +24,8 @@ const ListMenu = [
         href: createUrl("/profiles/visiMisi"),
       },
       {
-        name: "Sejarah",
-        href: createUrl("/profiles/history"),
+        name: "Struktur Organisasi",
+        href: createUrl("/profiles/structure"),
       },
       {
         name: "Pegawai",
