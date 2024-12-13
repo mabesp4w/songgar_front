@@ -1,6 +1,8 @@
 /** @format */
 
+import Link from "next/link";
 import React from "react";
+import { BiLogoFacebook, BiLogoInstagram, BiLogoYoutube } from "react-icons/bi";
 
 const page = () => {
   return (
@@ -8,6 +10,20 @@ const page = () => {
       <h1 className="text-center font-hollirood md:text-2xl lg:text-3xl text-lg">
         FAKULTAS PERTANIAN KEHUTANAN KELAUTAN
       </h1>
+      <div className=" flex gap-2 items-center mx-4 mt-4">
+        <span className="font-semibold">Sosial Media :</span>
+        <div className="flex gap-1 text-primary text-2xl">
+          <Link href="https://www.facebook.com/fpkkuogp" target="_blank">
+            <BiLogoFacebook className="hover:text-slate-50 cursor-pointer" />
+          </Link>
+          <Link href="https://www.instagram.com/fpkk_uogp/" target="_blank">
+            <BiLogoInstagram className="hover:text-slate-50 cursor-pointer" />
+          </Link>
+          <Link href="https://www.facebook.com/" target="_blank">
+            <BiLogoYoutube className="hover:text-slate-50 cursor-pointer" />
+          </Link>
+        </div>
+      </div>
       <div className="w-full mt-5 border">
         <iframe
           className="w-full h-96"
