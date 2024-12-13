@@ -3,7 +3,6 @@
 import ModalFull from "@/components/modal/ModalFull";
 import AnnouncementsTypes from "@/types/AnnouncementsTypes";
 import { momentId } from "@/utils/momentIndonesia";
-import DOMPurify from "dompurify";
 import React from "react";
 
 type Props = {
@@ -17,8 +16,6 @@ const DetailAnnouncement = ({
   showModal,
   setShowModal,
 }: Props) => {
-  const cleanContent = DOMPurify.sanitize(announcement?.content || "");
-
   if (!announcement) {
     return null;
   }
@@ -42,7 +39,7 @@ const DetailAnnouncement = ({
           </h5>
         </div>
         <div
-          dangerouslySetInnerHTML={{ __html: cleanContent }}
+          dangerouslySetInnerHTML={{ __html: announcement?.content || "" }}
           className="relative prose h-full  overflow-hidden"
         />
       </div>

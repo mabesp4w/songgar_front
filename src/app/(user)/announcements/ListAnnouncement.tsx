@@ -4,7 +4,6 @@ import LoadingSpiner from "@/components/loading/LoadingSpiner";
 import React, { useCallback, useEffect, useState } from "react";
 import useAnnouncementsApi from "@/stores/api/Announcements";
 import AnnouncementsTypes from "@/types/AnnouncementsTypes";
-import DOMPurify from "dompurify";
 import { momentId } from "@/utils/momentIndonesia";
 import DetailAnnouncement from "./DetailAnnouncement";
 const ListAnnouncement = () => {
@@ -54,7 +53,6 @@ const ListAnnouncement = () => {
               return content;
             };
             const limitedContent = limitContentLength(item.content, 200);
-            const cleanContent = DOMPurify.sanitize(limitedContent);
 
             return (
               <div
@@ -70,7 +68,7 @@ const ListAnnouncement = () => {
                   {" - "} {item.major.major_nm}
                 </h4>
                 <div
-                  dangerouslySetInnerHTML={{ __html: cleanContent }}
+                  dangerouslySetInnerHTML={{ __html: limitedContent }}
                   className="relative prose h-full  overflow-hidden"
                 ></div>
               </div>

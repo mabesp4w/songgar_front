@@ -4,7 +4,6 @@ import ModalFull from "@/components/modal/ModalFull";
 import { BASE_URL } from "@/services/baseURL";
 import NewsTypes from "@/types/NewsTypes";
 import { momentId } from "@/utils/momentIndonesia";
-import DOMPurify from "dompurify";
 import Image from "next/image";
 import React from "react";
 
@@ -15,8 +14,6 @@ type Props = {
 };
 
 const DetailNews = ({ news, showModal, setShowModal }: Props) => {
-  const cleanContent = DOMPurify.sanitize(news?.content || "");
-
   if (!news) {
     return null;
   }
@@ -44,7 +41,7 @@ const DetailNews = ({ news, showModal, setShowModal }: Props) => {
           <h5>Jayapura, {momentId(news?.news_date).format("LL")}</h5>
         </div>
         <div
-          dangerouslySetInnerHTML={{ __html: cleanContent }}
+          dangerouslySetInnerHTML={{ __html: news?.content || "" }}
           className="relative prose h-full  overflow-hidden"
         />
       </div>
